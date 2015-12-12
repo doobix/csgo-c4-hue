@@ -49,7 +49,7 @@ To get your hue bridge IP, visit: http://www.meethue.com/api/nupnp
 
 ### How to make a hue user
 
-You can make a new user by going to the API Debug Tool: http://<your hue bridge ip>/debug/clip.html
+You can make a new user by going to the API Debug Tool: `http://<your hue bridge ip>/debug/clip.html`
 
 For the url input box, enter `/api`.
 
