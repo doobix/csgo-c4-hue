@@ -1,5 +1,5 @@
 # csgo-c4-hue
-These scripts let will change the colors of your Philips Hue lights based on the C4 bomb status in Counter-Strike: Global Offensive.
+These scripts will change the colors of your Philips Hue lights based on the C4 bomb status in Counter-Strike: Global Offensive.
 
 ## Features
 
@@ -11,14 +11,20 @@ These scripts let will change the colors of your Philips Hue lights based on the
 
 ## Installation
 
-1. Install Python 2.7 if your machine doesn't have it.
-2. Install Flask via pip.
+1. Copy `gamestate_integration_c4_hue.cfg` to your CS:GO cfg directory.
+
+  OS X: `/Users/<username>/Library/Application Support/Steam/SteamApps/common/Counter-Strike Global Offensive/csgo/cfg`
+
+  Windows: `C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\csgo\cfg`
+
+2. Install Python 2.7 if your machine doesn't have it.
+3. Install Flask via pip.
 
   OS X: `pip install flask`
 
   Windows: `C:\Python27\Scripts\pip.exe install flask`
 
-3. Edit `csgo-c4-hue.py` and fill in the values for your hue bridge IP and hue user.
+4. Edit `csgo-c4-hue.py` and fill in the values for your [hue bridge IP](#how-to-get-hue-bridge-ip) and [hue user](#how-to-make-a-hue-user).
 
   Example:
 
@@ -27,11 +33,21 @@ These scripts let will change the colors of your Philips Hue lights based on the
   HUE_USER = '1a2a3a4a5a6a7a8a9a0a'
   ```
 
-## How to get hue bridge IP
+## Usage
+
+Run both `csgo-c4-hue.py` and `csgo-c4-hue-server.py` scripts while playing CS:GO.
+
+The `csgo-c4-hue-server.py` script will be receiving the gamestate data from CS:GO and it will write the bomb status to the file named `bomb_status`.
+
+The `csgo-c4-hue.py` script will be reading the `bomb_status` file every 250 ms and will change the hue lights depending on what is in that file.
+
+## Appendix
+
+### How to get hue bridge IP
 
 To get your hue bridge IP, visit: http://www.meethue.com/api/nupnp
 
-## How to make a hue user
+### How to make a hue user
 
 You can make a new user by going to the API Debug Tool: http://<your hue bridge ip>/debug/clip.html
 
