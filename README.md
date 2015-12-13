@@ -3,6 +3,8 @@ These scripts will change the colors of your Philips Hue lights based on the C4 
 
 [![CS:GO C4 Hue Lights](http://i.imgur.com/2lrbSMc.gif)](https://www.youtube.com/watch?v=QBdI54MHB-k)
 
+The Node.js version can be found here: [csgo-c4-hue-node](https://github.com/doobix/csgo-c4-hue-node)
+
 ## Features
 
 * Each light blinks red 1-by-1 when bomb has been planted.
