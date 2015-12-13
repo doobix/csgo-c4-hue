@@ -4,7 +4,7 @@ These scripts will change the colors of your Philips Hue lights based on the C4 
 ## Features
 
 * Each light blinks red 1-by-1 when bomb has been planted.
-* All lights blink red when bomb has been planted for at least 35 seconds.
+* All lights blink red when bomb has been planted for at least 30 seconds.
 * All lights turn orange when bomb has exploded.
 * All lights turn blue when bomb has been defused.
 * All lights turn white when there is no bomb status.
