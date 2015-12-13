@@ -32,7 +32,7 @@ def main():
                 bomb_time = time.time()
             total_bomb_time = time.time() - bomb_time
             print 'bomb planted for {} seconds'.format(total_bomb_time)
-            if total_bomb_time >= 35:
+            if total_bomb_time >= 30:
                 if last_blink_time is None:
                     last_blink_time = time.time() - 2
                 elapsed_blink_time = time.time() - last_blink_time
