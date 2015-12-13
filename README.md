@@ -1,6 +1,8 @@
 # csgo-c4-hue
 These scripts will change the colors of your Philips Hue lights based on the C4 bomb status in Counter-Strike: Global Offensive.
 
+[![CS:GO C4 Hue Lights](http://i.imgur.com/2lrbSMc.gif)](https://www.youtube.com/watch?v=QBdI54MHB-k)
+
 ## Features
 
 * Each light blinks red 1-by-1 when bomb has been planted.
